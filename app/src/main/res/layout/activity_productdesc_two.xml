@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#014421"
-    tools:context=".Productdesc_one">
+    tools:context=".Productdesc_two">
+
 
 
     <LinearLayout
@@ -16,23 +17,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <!-- Image -->
-
-        <!-- Description -->
-
         <ImageView
             android:padding="5dp"
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="597dp"
             android:layout_weight="1"
-            android:src="@drawable/corn" />
+            android:src="@drawable/mango" />
 
+
+
+        <!-- Description -->
         <TextView
-            android:id="@+id/descriptionTextView"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Maize Plant\n\nGrowth Conditions:\n\n- Temperature: Optimal temperature range is 75°F to 86°F (24°C to 30°C).\n\n- Sunlight: Requires full sun exposure (6 to 8 hours of direct sunlight per day).\n\n- Soil: Well-drained soil with good fertility and organic matter content.\n\n- Watering: Regular watering to keep the soil consistently moist.\n\n- Nutrients: Requires nitrogen-rich fertilizers for healthy growth.\n\n- pH Level: Preferred pH range is 5.8 to 7.0.\n\n- Pests and Diseases: Monitor for common pests and diseases like corn borers, armyworms, and fungal infections." />
+            android:id="@+id/descriptionTextView2"
+            android:layout_width="match_parent"
+            android:text="Mango Plant\n\nGrowth Conditions:\n\n- Temperature: Optimal temperature range is 75°F to 86°F (24°C to 30°C).\n\n- Sunlight: Requires full sun exposure (6 to 8 hours of direct sunlight per day).\n\n- Soil: Well-drained soil with good fertility and organic matter content.\n\n- Watering: Regular watering to keep the soil consistently moist.\n\n- Nutrients: Requires nitrogen-rich fertilizers for healthy growth.\n\n- pH Level: Preferred pH range is 5.8 to 7.0.\n\n- Pests and Diseases: Monitor for common pests and diseases like corn borers, armyworms, and fungal infections." />
+
 
         <Button
             android:id="@+id/button_pay"

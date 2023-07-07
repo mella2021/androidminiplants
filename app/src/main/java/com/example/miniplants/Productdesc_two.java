@@ -6,21 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Productdesc_one extends AppCompatActivity {
+public class Productdesc_two extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_productdesc_one);
-
+        setContentView(R.layout.activity_productdesc_two);
     }
 
-    public void onClick (View v){
-        Intent intent = new Intent(Productdesc_one.this, PaymentActivity.class);
+    public void onClick(View v) {
+        Intent intent = new Intent(Productdesc_two.this, PaymentActivity.class);
         startActivity(intent);
-
-
-
-
     }
 }

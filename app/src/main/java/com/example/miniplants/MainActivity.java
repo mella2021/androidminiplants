@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 //import android.os.Handler;
 //import android.view.MenuItem;
@@ -19,6 +21,11 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity{
+    private ImageButton imageButton1;
+    private ImageButton imageButton2;
+    private ImageButton imageButton3;
+
+//    private Button searchButton;
 
 //        implements NavigationView.OnNavigationItemSelectedListener
 //    private DrawerLayout drawerLayout;
@@ -30,14 +37,57 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
+
+
+
+            // Find views by their IDs
+            imageButton1 = findViewById(R.id.imageButton1);
+            imageButton2 = findViewById(R.id.imageButton2);
+
+
+            // Set click listeners for ImageButtons
+            imageButton1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Handle button 1 click
+                    // Replace with your desired action or navigate to another activity
+                    Toast.makeText(MainActivity.this, "Maize Plant clicked", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getApplicationContext(), Productdesc_one.class);
+                    startActivity(intent);
+                }
+            });
+
+            imageButton2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Handle button 2 click
+                    // Replace with your desired action or navigate to another activity
+                    Toast.makeText(MainActivity.this, "Mango Plant clicked", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getApplicationContext(), Productdesc_two.class);
+                    startActivity(intent);
+                }
+            });
+
+
+
+
+//            // Set click listener for search button
+//            searchButton.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    // Handle search button click
+//                    // Replace with your desired action or navigate to another activity
+//                    Toast.makeText(MainActivity.this, "Search button clicked", Toast.LENGTH_SHORT).show();
+//                }
+//            });
+        }
     }
 
-    public void btnClick (View view){
-        Intent intent = new Intent(MainActivity.this, Productdesc_one.class);
-        startActivity(intent);
 
-    }
-}
+
+
+
+
 
 
 

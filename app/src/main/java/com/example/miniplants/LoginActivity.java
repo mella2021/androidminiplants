@@ -35,12 +35,12 @@ public class LoginActivity extends AppCompatActivity {
                         Boolean checkCredentials = databaseHelper.checkEmailPassword(email,password);
 
                         if (checkCredentials == true) {
-                                Toast.makeText(LoginActivity.this, "Login successfully", Toast.LENGTH_LONG).show();
+                                Toast.makeText(LoginActivity.this, "Login successfully", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(getApplicationContext(), SplashActivity.class);
                                 startActivity(intent);
 
                             } else {
-                                Toast.makeText(LoginActivity.this, "Invalid credentials", Toast.LENGTH_LONG).show();
+                                Toast.makeText(LoginActivity.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
 
                             }
                         }
